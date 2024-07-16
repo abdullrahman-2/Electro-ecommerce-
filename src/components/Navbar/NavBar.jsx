@@ -13,7 +13,7 @@ function NavBar(){
     <>
  <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home"><img src='public/assets/logo.png'/></Navbar.Brand>
+        <Navbar.Brand href="#home"><img src='assets/logo.png'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto  d-flex justify-content-between align-items-center w-100">
