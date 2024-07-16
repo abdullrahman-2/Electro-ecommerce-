@@ -1,0 +1,17 @@
+.swiper.section{
+    
+    flex-wrap: wrap;
+
+}
+.swiper-slide{
+    display: flex;
+ 
+    flex-wrap: wrap;
+}
+
+.swiper-wrapper{
+    display: flex !important;
+
+}
+
+

@@ -1,0 +1,30 @@
+.swiper{
+        margin-top: 3rem;
+        height: 600px;
+}
+
+.swiper img{
+    border-radius: 4px; 
+    width: 100%;
+
+}
+
+.swiper-button-next,.swiper-button-prev{
+    color: white;
+    margin: 0 1px;
+    height: 35px !important;
+    width: 35px !important;
+    border-radius: 50%;
+    border: 2px solid black;
+    transition: .3s;
+}
+.swiper-button-next:after,.swiper-button-prev:after{
+    font-size: 20px !important;
+    font-weight: 800;
+}
+
+.swiper-button-next:hover,.swiper-button-prev:hover{
+    color: black;   
+    border: 1px solid white;
+
+}

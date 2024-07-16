@@ -1,0 +1,22 @@
+.product__img{
+  height: 200px ;
+  object-fit: contain;
+}
+
+.card{
+  margin-top: 3rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 370px !important;
+  transition: .3s;
+  
+}
+.card a{
+  text-decoration: none !important;
+  color: #000;
+
+}
+
+.card:hover{
+  transform: rotate(5deg);
+  scale: 1.2;
+}
