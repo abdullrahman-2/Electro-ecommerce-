@@ -9,9 +9,26 @@
     flex-wrap: wrap;
 }
 
-.swiper-wrapper{
-    display: flex !important;
+.section{
+    display: grid !important;
+    grid-template-columns: 120px 120px;
 
 }
 
+#btnSlide{
+    /* width: 50% !important; */
+    /* font-size: 10px; */
+ 
+}
+.btns{
+display: grid;
+grid-template-columns: auto auto;
+}
 
+@media screen and (max-width:408px) {
+    .btns{
+      display: flex;
+      flex-direction: column;
+        }
+    
+}

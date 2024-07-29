@@ -20,10 +20,12 @@ export default function ProductCard( {product} ) {
           <Card.Title><Link to={'/product/'+product.id}>{product.title}</Link></Card.Title>
           <Card.Text>${product.price}</Card.Text>
           <div className="d-flex gap-3">
-            <Button onClick={()=>{dispatch(addItem(product))}} variant="primary" className="w-100">
+          <div className="btns gap-3">
+            <Button id="btnSlide" onClick={()=>{dispatch(addItem(product))}} variant="primary" className="w-100">
               Add To Cart
             </Button>
             <Button variant="danger">
+            
               <svg
                 width="25px"
                 height="25px"
@@ -37,6 +39,7 @@ export default function ProductCard( {product} ) {
                 />
               </svg>
             </Button>
+          </div>
           </div>
         </Card.Body>
       </Card>

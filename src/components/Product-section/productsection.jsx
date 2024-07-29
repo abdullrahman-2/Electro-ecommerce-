@@ -5,34 +5,38 @@ import "./productsection.css";
 import ProductCard from "../Card/ProductCard";
 
 export default function ProductsSection(props) {
-  const [slidesPerView, setSlidesPerView] = useState(4);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth <= 770) {
-        setSlidesPerView(2);
-      } else {
-        setSlidesPerView(4);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+   
 
   return (
     <div className="mb-5">
       <h3 className="m-0">{props.title}</h3>
 
       <Swiper
-        slidesPerView={slidesPerView}
+      pagination={{
+          clickable: true,
+        }}
+        slidesPerView={4}
         spaceBetween={20}
         loop={true}
-        className="my-3 section"
+        className="my-3  section"
+        breakpoints ={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          320:{
+            slidesPerView:2,
+            spaceBetween:20
+          }
+        }}
       >
         {props.products.map((product) => {
           return (
