@@ -6,8 +6,8 @@
 .card{
   margin-top: 3rem;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  height: 370px !important;
-  transition: .3s;
+   transition: .3s;
+   height: 400px !important;
   
 }
 .card a{

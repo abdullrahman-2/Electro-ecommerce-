@@ -20,9 +20,13 @@
     /* font-size: 10px; */
  
 }
+.btns button{
+    height: 30%;
+}
 .btns{
 display: grid;
 grid-template-columns: auto auto;
+height: 12em !important;
 }
 
 @media screen and (max-width:408px) {

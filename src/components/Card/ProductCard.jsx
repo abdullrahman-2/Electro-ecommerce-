@@ -10,13 +10,13 @@ export default function ProductCard( {product} ) {
   const cart = useSelector(state => state.cartSlice.cart)
   return (
     <div>
-      <Card className="card">
+      <Card className="card c-body">
         <Card.Img
           className="product__img"
           variant="top"
           src={product.thumbnail}
         />
-        <Card.Body>{}
+        <Card.Body >{}
           <Card.Title><Link to={'/product/'+product.id}>{product.title}</Link></Card.Title>
           <Card.Text>${product.price}</Card.Text>
           <div className="d-flex gap-3">
